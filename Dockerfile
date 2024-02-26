@@ -7,4 +7,4 @@ RUN echo $AWS_ACCESS_KEY_ID
 RUN echo $AWS_SECRET_ACCESS_KEY 
 RUN echo $AWS_SESSION_TOKEN 
 RUN aws sts get-caller-identity 
-RUN aws secretsmanager get-secret-value --secret-id AppDeploy --region ap-northeast-1
+RUN aws secretsmanager get-secret-value --secret-id AppDeploy --region us-east-1
